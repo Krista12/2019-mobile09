@@ -1,6 +1,7 @@
 package id.ac.polinema.recyclerviewsangatsederhana;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,6 +43,7 @@ public class Tugas1dan2MainActivity extends AppCompatActivity {
 
         Tugas1dan2Adapter tugas1dan2Adapter = new Tugas1dan2Adapter(tugas1dan2List);
         rvTugas1danTugas2.setAdapter(tugas1dan2Adapter);
-        rvTugas1danTugas2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+       // rvTugas1danTugas2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        rvTugas1danTugas2.setLayoutManager(new GridLayoutManager(this,2));
     }
 }
